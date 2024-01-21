@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/28676f8654.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <title>WeatherAppWireframe</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <div class="row">
+          <div class="col-4">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control search-box"
+                placeholder="Search city here"
+                id="search-city"
+              />
+              <input
+                class="btn btn-light search-button"
+                type="submit"
+                value="🔍"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card main-card">
+            <div class="card-body">
+              <h5 class="card-title-main">City</h5>
+              <p class="card-text-main">15°C</p>
+              <h6 class="card-text">Thur Nov 30, 00:00, 2023</h6>
+              <i class="fa-solid fa-cloud-sun weather-icon"></i>
+              <p class="main-card-blurb">
+                <strong> Partly cloudy</strong> <br />
+                Precipitation: 30% <br />
+                Wind: 20km/h <br />
+                Humidity: 70%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row forecast-line">
+        <div class="col-3 forecast-line-today">Today</div>
+        <div class="col-3 forecast-line-5">5-day forecast</div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tuesday</h5>
+              <p class="card-text">Cloudy with rain</p>
+              <p class="card-text-temperature">15°C</p>
+              <i class="fa-solid fa-cloud-rain forecast-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Wednesday</h5>
+              <p class="card-text">Partly cloudy</p>
+              <p class="card-text-temperature">15°C</p>
+              <i class="fa-solid fa-cloud-sun forecast-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Thursday</h5>
+              <p class="card-text">Cloudy with rain</p>
+              <p class="card-text-temperature">15°C</p>
+              <i class="fa-solid fa-cloud-rain forecast-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Friday</h5>
+              <p class="card-text">Partly cloudy</p>
+              <p class="card-text-temperature">15°C</p>
+              <i class="fa-solid fa-cloud-sun forecast-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Saturday</h5>
+              <p class="card-text">Cloudy with rain</p>
+              <p class="card-text-temperature">15°C</p>
+              <i class="fa-solid fa-cloud-rain forecast-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="quick-search">
+        Quick search:
+        <strong
+          >London | New York | Lisbon | Milan | Hong Kong | Paris |
+          Seoul</strong
+        >
+      </span>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
